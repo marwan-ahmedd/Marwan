@@ -21,7 +21,7 @@ const Banner = () => {
                     </h1>
                 </div>
                 <div className='flex-1 mb-6 text-[30px] lg:text-[60px] font-primary 
-                                font-semibold  leading-[1]'>
+                                font-semibold leading-[1]'>
                     <span className='text-white mr-4'>I am a</span>
                     <TypeAnimation 
                         sequence={[

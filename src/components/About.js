@@ -13,7 +13,7 @@ const About = () => {
                     science and artificial intelligence at
                     <b className='text-Green'>
                         <a href='https://cu.edu.eg/Home'> Cairo University</a>
-                    </b>.<br /> I plan to pursue a master's degree in Artificial Intelligence after completing my undergraduate studies.
+                    </b>.<br /> I plan to pursue a master's degree in <span className='text-LightestSlate'>Artificial Intelligence</span> after completing my undergraduate studies.
                 </p>
     const two = <p className='mt-10 mb-2 font-secondary text-Slate'>
                     Technologies and languages I have been working with:
@@ -46,7 +46,7 @@ const About = () => {
                     <div className='pl-[20px] text-[17px] font-bold'>
                         {one}
                         {two}
-                        <div className=' grid grid-cols-[200px_minmax(_100px,_1fr)]' >
+                        <div className='grid grid-cols-[200px_minmax(_100px,_1fr)]' >
                             {tech.map((item, i) => {
                                 return (
                                     <li className='text-Slate text-[17px]'>{item}</li>
