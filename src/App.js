@@ -1,7 +1,8 @@
 import React from 'react'
 
-import Nav from './components/Nav'
 import Banner from './components/Banner'
+import Nav from './components/Nav'
+import About from './components/About'
 
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
         <div className='bg-slate-900' >
             <Banner />
             {/* <Nav /> */}
-            {/* <About /> */}
+            <About />
             {/* <Contact /> */}
             <div className='h-[4000px]'></div>
         </div>

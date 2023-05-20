@@ -3,9 +3,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Jetbrains Mono',
-      secondary: 'Cascadia Code',
-      tertiary: 'Aldrich',
+      primary: 'NTR',
+      secondary: 'Jetbrains Mono',
+      tertiary: 'Lato',
     },
     container: {
       padding: {
@@ -20,10 +20,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#0a0a0a',
-        accent: '#B809C3',
-        engineer: '#64ffda',
-        desc: '#8892b0'
+        LightestSlate	: '#ccd6f6', 
+        Green: '#64ffda',
+        Slate: '#8892b0',
       },
       
     },
