@@ -7,9 +7,7 @@ import { fadeIn } from '../variants'
 
 
 const About = () => {
-    const [ref, inView] = useInView({
-        threshold: 0.5,
-    })
+    
     const one = <p className='mt-10 font-secondary text-Slate max-w-[600px]'>
                     I'm currently in my sophomore year studying computer
                     science and artificial intelligence at
@@ -35,9 +33,15 @@ const About = () => {
     const tech_list = tech.map(stack => <li>{stack}</li>)
 
     return (
-        <div className='mr-[200px] flex'>
-            <div className='container mx-auto flex'>
-                <div>
+        <div className='mr-[200px]'>
+            <div>
+                <motion.div 
+                    variants={fadeIn('up', 0.1)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once: true, amount: 0.3}}
+                    className='container mx-auto'
+                >
                     <h1 className='font-primary text-LightestSlate text-[45px] font-bold'>/ About me</h1>
                     <div className='pl-[20px] text-[17px] font-bold'>
                         {one}
@@ -51,7 +55,7 @@ const About = () => {
 
                         </div>
                     </div>
-                </div>
+                </motion.div>
                 
             </div>
         </div>
