@@ -1,21 +1,18 @@
 import React from 'react'
 
-import CountUp from 'react-countup'
-import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 
 
 const About = () => {
     
-    const one = <p className='mt-10 font-secondary text-Slate max-w-[600px]'>
+    const one = <p className='font-primary text-Slate max-w-[700px] text-justify'>
                     I'm currently in my sophomore year studying computer
                     science and artificial intelligence at
-                    <b className='text-Green'>
-                        <a href='https://cu.edu.eg/Home'> Cairo University</a>
-                    </b>.<br /> I plan to pursue a master's degree in <span className='text-LightestSlate'>Artificial Intelligence</span> after completing my undergraduate studies.
+                    <b className='text-Green' ><a href='https://cu.edu.eg/Home'> Cairo University</a></b>
+                    . I plan to pursue a master's degree in <span className=' text-LightestSlate font-bold'>Artificial Intelligence</span> after completing my undergraduate studies.
                 </p>
-    const two = <p className='mt-10 mb-2 font-secondary text-Slate'>
+    const two = <p className='mt-10 mb-2 font-primary text-Slate'>
                     Technologies and languages I have been working with:
                 </p>
     const tech = [
@@ -33,8 +30,7 @@ const About = () => {
     const tech_list = tech.map(stack => <li>{stack}</li>)
 
     return (
-        <div className='mr-[200px]'>
-            <div>
+        <div className='mr-[200px] mt-[-100px]' id='about'>
                 <motion.div 
                     variants={fadeIn('up', 0.1)}
                     initial='hidden'
@@ -42,14 +38,17 @@ const About = () => {
                     viewport={{ once: true, amount: 0.3}}
                     className='container mx-auto'
                 >
-                    <h1 className='font-primary text-LightestSlate text-[45px] font-bold'>/ About me</h1>
-                    <div className='pl-[20px] text-[17px] font-bold'>
+                    <div className='text-LightestSlate font-primary text-[45px] font-bold flex items-center gap-8'>
+                        <div><span className='text-Green'>#</span> about-me</div>
+                        <div className='line w-2/5 h-px bg-Green'></div>
+                    </div>
+                    <div className='text-[24px] mt-10'>
                         {one}
                         {two}
-                        <div className='grid grid-cols-[200px_minmax(_100px,_1fr)]' >
+                        <div className='grid grid-cols-[200px_minmax(_100px,_1fr)] list-disc text-Green' >
                             {tech.map((item, i) => {
                                 return (
-                                    <li className='text-Slate text-[17px]'>{item}</li>
+                                    <li className='text-Slate text-[22px] font-primary'>{item}</li>
                                 )
                             })}
 
@@ -57,7 +56,6 @@ const About = () => {
                     </div>
                 </motion.div>
                 
-            </div>
         </div>
     )
 }

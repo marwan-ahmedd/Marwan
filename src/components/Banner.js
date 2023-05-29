@@ -1,13 +1,14 @@
 import React from "react"
 
-import { FaGithub, FaYoutube, FaDribble } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from "framer-motion"
 import { fadeIn } from '../variants'
+import { FiMail } from 'react-icons/fi'
+import { EmailRounded } from "@mui/icons-material"
 
 const Banner = () => {
     return (
-        <section className="section mr-[200px]" id='home'>
+        <div className="section mr-[200px]" id='home'>
             <motion.div 
                 variants={fadeIn('up', 0.1)}
                 initial='hidden'
@@ -16,13 +17,13 @@ const Banner = () => {
                 className='container mx-auto'>
 
                 <div>
-                    <h1 className='mb-[20px] text-[65px] font-bold font-primary leading-[0.8] lg:text-[60px] text-Green'>
-                        Marwan
+                    <h1 className='mb-[20px] text-[65px] font-bold font-primary leading-[0.8] lg:text-[60px] text-LightestSlate'>
+                        hi, <span className='text-Green'>marwan</span> here. 
                     </h1>
                 </div>
                 <div className='flex-1 mb-6 text-[30px] lg:text-[60px] font-primary 
                                 font-semibold leading-[1]'>
-                    <span className='text-white mr-4'>I am a</span>
+                    <span className='text-LightestSlate mr-4'>I am a</span>
                     <TypeAnimation 
                         sequence={[
                             'Software Engineer', 2000,
@@ -34,11 +35,29 @@ const Banner = () => {
                         repeat={Infinity}
                     />
                 </div>
-                <p className='text-Slate text-[17px] font-secondary font-bold'>
-                Passionate software engineer with a strong foundation in building <br /> scalable and efficient applications. I have great interest in<br /> software design, artificial intelligence and game development.
-                    </p>
+                <p className=' text-[24px] text-Slate font-primary max-w-[700px] text-justify'>
+                    Passionate software engineer with a strong foundation in building 
+                    scalable and efficient applications. I have great interest in
+                    software design, artificial intelligence and game development.
+                </p>
+                <p className=' text-[24px] text-LightestSlate font-primary max-w-[700px] text-justify font-bold'>I'm seeking a summer training in a competitive environment where i can apply my skills and learn from highly talented people</p>
+                {/* Contact Me */}
+                <br />
+                <a 
+                href='mailto:marwann.ahmedd2003@gmail.com'
+                target='_blank'
+                rel='noreferrer'
+                className='
+                text-[22px] font-bold font-primary p-[10px] text-LightestSlate
+                cursor-pointer border-[1px] border-Green border-radius-[5px] 
+                hover:bg-Green hover:text-LightestSlate transition-all 
+                duration-300 ease-in-out flex items-center w-[200px] justify-center'
+                >
+                    <EmailRounded className="mr-2"/>
+                    {'Contact Me'}
+                </a>
             </motion.div>
-        </section>
+        </div>
     )
 }
 

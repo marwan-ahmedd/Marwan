@@ -2,6 +2,10 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    backgroundColor: (theme) => ({
+      ...theme('colors'),
+      'background': '#282C33',    
+    }),
     fontFamily: {
       primary: 'NTR',
       secondary: 'Jetbrains Mono',
@@ -21,8 +25,8 @@ module.exports = {
     extend: {
       colors: {
         LightestSlate	: '#ccd6f6', 
-        Green: '#64ffda',
-        Slate: '#8892b0',
+        Green: '#C778DD',
+        Slate: '#8892b0'
       },
       
     },
