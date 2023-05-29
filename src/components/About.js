@@ -17,14 +17,14 @@ const About = () => {
                 </p>
     const tech = [
         "Python",
-        "React.js",
         "Javascript ES6+",
-        "Node.js",
         "C++",
-        "django",
+        "React.js",
         "Java",
         "Tailwind CSS",
         "HTML & CSS",
+        "Django",
+        "SQL",
         "Git & Github",
     ]
     const tech_list = tech.map(stack => <li>{stack}</li>)
