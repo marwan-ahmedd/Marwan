@@ -27,7 +27,6 @@ const About = () => {
         "SQL",
         "Git & Github",
     ]
-    const tech_list = tech.map(stack => <li>{stack}</li>)
 
     return (
         <div className='mr-[200px] mt-[-100px]' id='about'>

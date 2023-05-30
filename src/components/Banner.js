@@ -3,7 +3,6 @@ import React from "react"
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from "framer-motion"
 import { fadeIn } from '../variants'
-import { FiMail } from 'react-icons/fi'
 import { EmailRounded } from "@mui/icons-material"
 
 const Banner = () => {
