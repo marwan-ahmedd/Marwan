@@ -10,7 +10,7 @@ const Projects = () => {
         {
             name: 'Fitness Club',
             desc: 'Developed a fitness club website using React that showcases various exercises for different body parts. Integrated the Rapid API to fetch over 1,500 exercises data based on the user’s input of body part or exercise name.',
-            techStack: 'React.js, RapidAPI',
+            techStack: 'React.js, RapidAPI, Tailwind CSS',
             link: 'https://github.com/marwan-ahmedd/Fitness-Club',
         },
         {

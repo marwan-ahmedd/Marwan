@@ -38,7 +38,7 @@ const Banner = () => {
                 <p className=' text-[24px] text-Slate font-primary max-w-[700px] text-justify'>
                     Passionate software engineer with a strong foundation in building 
                     scalable and efficient applications. I have great interest in
-                    software design, artificial intelligence and game development.
+                    software design, artificial intelligence and code puzzles.
                 </p>
                 <p className=' text-[24px] text-LightestSlate font-primary max-w-[700px] text-justify font-bold'>I'm seeking a summer training in a competitive environment where i can apply my skills and learn from highly talented people</p>
                 {/* Contact Me */}
