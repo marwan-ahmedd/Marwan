@@ -62,7 +62,7 @@ class Nav extends React.Component {
                     <a href='https://github.com/marwan-ahmedd'>
                         <GitHub size={19} className='mr-2'/>
                     </a>
-                    <a href='https://www.linkedin.com/in/marwan-ahmed-b37b45245/'>
+                    <a href='https://www.linkedin.com/in/marwan-ahmed-26a840280/'>
                         <LinkedIn size={21} className='mr-2'/>
                     </a>
                 </div>
