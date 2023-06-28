@@ -14,10 +14,10 @@ const Projects = () => {
             link: 'https://github.com/marwan-ahmedd/Fitness-Club',
         },
         {
-            name: 'Human Resources',
+            name: 'FCAI HR',
             desc: 'A Human Resources Website for my faculty to manage their employees and their data. The website uses Ajax to search for employees without reloading the page.',
             techStack: 'Python(Django), HTML, CSS, Javascript',
-            link: '',
+            link: 'https://github.com/marwan-ahmedd/FCAI-Insiders',
         },
         {
             name: 'Responsive Chatbot',
