@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Marwan/static/css/main.63d3e187.css",
+    "main.js": "/Marwan/static/js/main.bffb35ec.js",
+    "index.html": "/Marwan/index.html",
+    "main.63d3e187.css.map": "/Marwan/static/css/main.63d3e187.css.map",
+    "main.bffb35ec.js.map": "/Marwan/static/js/main.bffb35ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63d3e187.css",
+    "static/js/main.bffb35ec.js"
+  ]
+}
